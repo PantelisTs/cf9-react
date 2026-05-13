@@ -2,6 +2,7 @@
 import ArrowFunctionalComponentWithProps from "./components/LessonThree/ArrowFunctionalComponentWithProps.tsx";
 // import ClassComponent from "./components/LessonTwo/ClassComponent.tsx";
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
+import Layout from "./components/Layout.tsx";
 
 
 
@@ -62,10 +63,15 @@ function App() {
       {/*<ArrowFunctionalComponent />*/}
 
 
-        {/*LESSON THREE*/}
-        <ArrowFunctionalComponentWithProps title="Heading 1"/>
-        <ArrowFunctionalComponentWithProps title="Heading 2" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos eos incidunt ipsum labore magni odit officiis omnis possimus veniam."/>
-        <ArrowFunctionalComponentWithProps title="Heading 3"/>
+        {/*/!*LESSON THREE*!/*/}
+        {/*<ArrowFunctionalComponentWithProps title="Heading 1"/>*/}
+        {/*<ArrowFunctionalComponentWithProps title="Heading 2" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos eos incidunt ipsum labore magni odit officiis omnis possimus veniam."/>*/}
+        {/*<ArrowFunctionalComponentWithProps title="Heading 3"/>*/}
+
+
+        <Layout>
+            <ArrowFunctionalComponentWithProps title="Heading 1" description="Description" />
+        </Layout>
 
         <div></div>
         <h1></h1>
