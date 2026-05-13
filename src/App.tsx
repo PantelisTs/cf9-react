@@ -70,7 +70,8 @@ function App() {
 
 
         <Layout>
-            <ArrowFunctionalComponentWithProps title="Heading 1" description="Description" />
+            <ArrowFunctionalComponentWithProps title="Second Title" description="Description" />
+            <p className="text-red-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, possimus.</p>
         </Layout>
 
         <div></div>
