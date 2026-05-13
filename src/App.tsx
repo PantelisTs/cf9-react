@@ -69,9 +69,9 @@ function App() {
         {/*<ArrowFunctionalComponentWithProps title="Heading 3"/>*/}
 
 
-        <Layout>
+        <Layout addClasses="text-blue-600 bg-gray-100">
             {/*<ArrowFunctionalComponentWithProps title="Second Title" description="Description" />*/}
-            <p className="text-red-700">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, possimus.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, possimus.</p>
         </Layout>
 
         <div></div>
