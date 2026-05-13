@@ -10,7 +10,7 @@ const Layout = ({children}: LayoutProps) => {
     return (
         <>
             <Header/>
-            <main className="Container mx-auto min-h-[vh95]">
+            <main className="Container mx-auto min-h-[95vh]">
                 {children}
             </main>
             <Footer/>
