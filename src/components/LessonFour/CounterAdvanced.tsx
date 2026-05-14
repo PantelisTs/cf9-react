@@ -20,7 +20,7 @@ const CounterAdvanced = () => {
 
     const [state, setState] = useState<CounterState>(initialState);
 
-    const getCurrentTime = () => new Date().toLocaleDateString();
+    const getCurrentTime = () => new Date().toLocaleTimeString();
 
     const increaseCount = () => {
 
