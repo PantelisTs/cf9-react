@@ -3,6 +3,7 @@
 // import ClassComponent from "./components/LessonTwo/ClassComponent.tsx";
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
 import Layout from "./components/Layout.tsx";
+import Counter from "./components/LessonFour/Counter.tsx";
 
 
 
@@ -69,14 +70,16 @@ function App() {
         {/*<ArrowFunctionalComponentWithProps title="Heading 3"/>*/}
 
 
-        <Layout addClasses="text-blue-600 bg-gray-100">
+        <Layout addClasses="bg-gray=50">
             {/*<ArrowFunctionalComponentWithProps title="Second Title" description="Description" />*/}
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, possimus.</p>
+            {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, possimus.</p>*/}
+            <Counter/>
+
         </Layout>
 
-        <div></div>
-        <h1></h1>
-        <h2 className="cf-text" id="id"></h2>
+        {/*<div></div>*/}
+        {/*<h1></h1>*/}
+        {/*<h2 className="cf-text" id="id"></h2>*/}
         {/*h2.cf-text#id*/}
 
     </>
