@@ -3,9 +3,10 @@
 // import ClassComponent from "./components/LessonTwo/ClassComponent.tsx";
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
 import Layout from "./components/Layout.tsx";
-import Counter from "./components/LessonFour/Counter.tsx";
-import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
+// import Counter from "./components/LessonFour/Counter.tsx";
+// import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
+import NameChanger from "./components/LessonFive/NameChanger.tsx";
 
 
 
@@ -71,22 +72,29 @@ function App() {
         {/*<ArrowFunctionalComponentWithProps title="Heading 2" description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt dignissimos eos incidunt ipsum labore magni odit officiis omnis possimus veniam."/>*/}
         {/*<ArrowFunctionalComponentWithProps title="Heading 3"/>*/}
 
+        {/*LESSON FOUR*/}
+        {/*<Layout addClasses="bg-gray=50">*/}
+        {/*    /!*<ArrowFunctionalComponentWithProps title="Second Title" description="Description" />*!/*/}
+        {/*    /!*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, possimus.</p>*!/*/}
+        {/*    <Counter/>*/}
 
-        <Layout addClasses="bg-gray=50">
-            {/*<ArrowFunctionalComponentWithProps title="Second Title" description="Description" />*/}
-            {/*<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, possimus.</p>*/}
-            <Counter/>
+        {/*    /!*<ClassCounter/>*!/*/}
 
-            {/*<ClassCounter/>*/}
+        {/*    <CounterAdvanced/>*/}
 
-            <CounterAdvanced/>
-
-        </Layout>
+        {/*</Layout>*/}
 
         {/*<div></div>*/}
         {/*<h1></h1>*/}
         {/*<h2 className="cf-text" id="id"></h2>*/}
         {/*h2.cf-text#id*/}
+
+
+        {/*LESSON FIVE*/}
+        <Layout addClasses="bg-gray-50">
+            <NameChanger></NameChanger>
+        </Layout>
+
 
     </>
   )
