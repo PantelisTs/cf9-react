@@ -1,35 +1,33 @@
 import {useState} from "react";
+import type {CounterState} from "../types.ts"
 
 const initialState = {
     count: 0,
     lastAction: "",
-    time: ""
+    time: "",
 }
 
 export const useCounter = () => {
+    const [state, setState] = useState<CounterState>(initialState);
 
-    const [state, setState] = useState(initialState)
-
-    const getCurrentTime = () => new Date().toLocaleTimeString()
+    const getCurrentTime = () => new Date().toLocaleTimeString();
 
     const increase = () => {
         setState({
-           count: state.count + 1,
-           lastAction: "Increase",
-           time: getCurrentTime(),
+            count: state.count + 1,
+            lastAction: "Increase",
+            time: getCurrentTime(),
         });
     }
 
-
     const decrease = () => {
-        if(state.count > 0) {
+        if (state.count > 0) {
             setState({
                 count: state.count - 1,
                 lastAction: "Decrease",
                 time: getCurrentTime(),
             });
         }
-
     }
 
     const reset = () => {
@@ -38,17 +36,14 @@ export const useCounter = () => {
             lastAction: "Reset",
             time: getCurrentTime(),
         });
-
-
     }
 
     return {
         count: state.count,
-        lastAction: state.lastAction ,
+        lastAction: state.lastAction,
         time: state.time,
         increase,
         decrease,
         reset
     }
 }
-
