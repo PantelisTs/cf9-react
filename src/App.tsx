@@ -4,7 +4,8 @@
 // import ArrowFunctionalComponent from "./components/LessonTwo/ArrowFunctionalComponent.tsx";
 import Layout from "./components/Layout.tsx";
 // import AutoRedirect from "./components/LessonSix/AutoRedirect.tsx";
-import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
+// import AutoRedirectAdvanced from "./components/LessonSix/AutoRedirectAdvanced.tsx";
+import WindowSize from "./components/LessonSix/WindowSize.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
@@ -115,7 +116,8 @@ function App() {
         {/*LESSON SIX*/}
         <Layout addClasses="bg-gray-50">
             {/*<AutoRedirect/>*/}
-            <AutoRedirectAdvanced />
+            {/*<AutoRedirectAdvanced />*/}
+            <WindowSize/>
         </Layout>
 
     </>
