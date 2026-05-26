@@ -1,18 +1,6 @@
 import {useState} from "react";
 import {z} from "zod";
 
-// type FormValues = {
-//     name: string,
-//     email: string,
-//     message: string,
-// }
-
-// type FormErrors = {
-//     name?: string,
-//     email?: string,
-//     message?: string,
-// }
-
 const formSchema = z.object({
     name: z.string().trim().min(1, {error: "Name is required"}),
     email: z.email().min(1, {error: "Email is required"}),

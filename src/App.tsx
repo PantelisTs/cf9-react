@@ -21,6 +21,7 @@ import SearchPage from "./pages/SearchPage.tsx";
 import MultiFieldForm from "./components/LessonNine/MultiFieldForm.tsx";
 import MultiFieldFormWithValidation from "./components/LessonNine/MultiFieldFormWithValidation.tsx";
 import MultiFieldFormWithZod from "./components/LessonTen/MultiFieldFormWithZod.tsx";
+import MultiFieldFormWithHookForm from "./components/LessonTen/MultiFieldFormWithHookForm.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
@@ -172,6 +173,7 @@ function App() {
                         <Route path="multifield-form-validation" element={<MultiFieldFormWithValidation/>}/>
 
                         <Route path="multifield-form-zod" element={<MultiFieldFormWithZod/>}/>
+                        <Route path="multifield-form-hook" element={<MultiFieldFormWithHookForm/>}/>
                     </Route>
                     {/*/users*/}
                 {/*/users/userId*/}
