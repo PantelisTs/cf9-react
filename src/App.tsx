@@ -22,6 +22,7 @@ import MultiFieldForm from "./components/LessonNine/MultiFieldForm.tsx";
 import MultiFieldFormWithValidation from "./components/LessonNine/MultiFieldFormWithValidation.tsx";
 import MultiFieldFormWithZod from "./components/LessonTen/MultiFieldFormWithZod.tsx";
 import MultiFieldFormWithHookForm from "./components/LessonTen/MultiFieldFormWithHookForm.tsx";
+import HomePage from "./pages/HomePage.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
@@ -152,7 +153,7 @@ function App() {
             {/*<Layout>*/}
                 <Routes>
                     <Route element={<RouterLayout/>}>
-                        {/*<Route index element={<HomePage />} />*/}
+                        <Route index element={<HomePage />} />
 
                         {/*<Route path="examples">*/}
                         {/*    <Route index element={<NameChanger />} />*/}
