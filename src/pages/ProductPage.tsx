@@ -157,7 +157,7 @@ const ProductPage = () => {
                         checked={watch("is_active")}
                         onCheckedChange={(v) => setValue("is_active", v)}
                     />
-                    <Label htmlFor="isActive">Active</Label>
+                    <Label htmlFor="is_active">Active</Label>
                 </div>
                 <div className="flex items-center space-x-2">
                     <Switch
@@ -165,7 +165,7 @@ const ProductPage = () => {
                         checked={watch("is_favorite")}
                         onCheckedChange={(v) => setValue("is_favorite", v)}
                     />
-                    <Label htmlFor="isFavorite">Favorite</Label>
+                    <Label htmlFor="is_favorite">Favorite</Label>
                 </div>
 
                 <Button
