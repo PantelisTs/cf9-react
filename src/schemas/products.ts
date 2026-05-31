@@ -9,8 +9,8 @@ export const productSchema = z.object({
     image: z.string().optional(),
     price: z.number().nonnegative({error: "Price must be a non negative number"}),
     sort: z.number().int().min(1, {error: "At least one sort is required"}),
-    isActive: z.boolean(),
-    isFavorite: z.boolean(),
+    is_active: z.boolean(),
+    is_favorite: z.boolean(),
     category_id: z.number().int().min(1, {error: "Category is required"})
 })
 

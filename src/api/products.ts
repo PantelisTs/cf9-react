@@ -23,15 +23,24 @@ export async function getProduct(id: number): Promise<Product> {
 
 export async function updateProduct(
     id: number,
-    data: Product) {
-    const res = await fetch(
-        `${API_URL}/tenants/${TENANT_ID}/products/${id}`, {
-            method: "PUT",
-            headers: {"Content-Type": "application/json"},
-            body: JSON.stringify(data)
-        })
-    if (!res.ok) throw new Error("Failed to update product");
-    return await res.json();
+    data: {
+        description?: string | undefined;
+        image?: string | undefined;
+        is_active: boolean;
+        is_favorite: boolean;
+        name: string;
+        price: number;
+        slug: string;
+        sort: number;
+    },
+) {
+    const res = await fetch(`${API_URL}/tenants/${TENANT_ID}/products/${id}`, {
+        method: "PUT",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify(data),
+    })
+    if (!res.ok) throw new Error("Failed to update product")
+    return await res.json()
 }
 
 export async function createProduct(data: ProductFormData): Promise<Product> {

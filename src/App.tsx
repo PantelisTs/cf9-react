@@ -24,6 +24,7 @@ import MultiFieldFormWithZod from "./components/LessonTen/MultiFieldFormWithZod.
 import MultiFieldFormWithHookForm from "./components/LessonTen/MultiFieldFormWithHookForm.tsx";
 import HomePage from "./pages/HomePage.tsx";
 import ProductListPage from "./pages/ProductListPage.tsx";
+import ProductPage from "@/pages/ProductPage.tsx";
 // import Counter from "./components/LessonFour/Counter.tsx";
 // import CounterAdvanced from "./components/LessonFour/CounterAdvanced.tsx";
 // import ClassCounter from "./components/LessonFour/ClassCounter.tsx";
@@ -179,7 +180,7 @@ function App() {
 
                         <Route path="products">
                             <Route index element={<ProductListPage/>}/>
-                            {/*<Route path=":productId" element={<ProductPage/>}/>*/}
+                            <Route path=":productId" element={<ProductPage/>}/>
                         </Route>
                     </Route>
                     {/*/users*/}
